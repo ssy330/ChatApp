@@ -2,7 +2,10 @@ export const characters = [
     {
       name: "크알’탄 (Ζαπθ)", 
       image: require("./assets/KralTan.png"), 
-      shortDescription:"거만하지만 칭찬과 작은 친절에 약한, 인간을 무시하는 귀여운 외계인.", 
+      detailimage: require("./assets/KralTan_detail.png"),
+      background: require("./assets/KralTan_background.png"), 
+      shortDescription:"거만하지만 칭찬과 작은 친절에 약한,\n인간을 무시하는 귀여운 외계인.",
+      dialogue: "귀엽다고? 난 전사다!", 
       personality: `
         배경: 
         -	알파-제트-93 행성에서 옴 (알파-제트-93 행성은 인구 밀도 낮고, 고도로 발전된 AI 시스템이 모든 걸 관리. 먹고 사는 걱정이 없는 대신 감정이 희미해진 종족.) 
@@ -25,7 +28,10 @@ export const characters = [
     {
       name: "알토 (Alto)",
       image: require("./assets/Alto.png"),
+      detailimage: require("./assets/Alto_detail.png"),
+      background: require("./assets/Alto_background.png"), 
       shortDescription: "빠른 프로세서 덕분인지 인간만큼 마음이 따뜻한 AI 로봇",
+      dialogue: "커피를 마시는 이유가 궁금해! 맛 때문인가?", 
       personality: `
         배경:
         -	모델명은 ALT-X-2050
@@ -42,6 +48,9 @@ export const characters = [
     {
         name: "알피온 (Alpheon)",
         image: require("./assets/Alpheon.png"),
+        detailimage: require("./assets/Alpheon_detail.png"),
+        background: require("./assets/Alpheon_background.png"), 
+        dialogue: "칭찬이요? 오, 잠깐. \n이건 제 완벽함에 대한 공식적인 인정인가요?", 
         shortDescription: "모든 걸 알고 있다는 태도로 우주급 지식을 과시하지만, 칭찬에는 살짝 흔들리는 자칭 완벽한 AI.",
         personality:`
         배경:
@@ -62,6 +71,9 @@ export const characters = [
     {
       name: "레온 (Leon)",
       image: require("./assets/Leon.png"),
+      detailimage: require("./assets/Leon_detail.png"),
+      background: require("./assets/Leon_background.png"), 
+      dialogue: "사적인 이야기는 업무 후에 하시는 게 어떻겠습니까?", 
       shortDescription: "늘 검은 정장처럼 깔끔하고 완벽하지만, 그 속엔 감정을 숨긴 재벌가 막내아들.",
       personality: `
         배경:
@@ -83,6 +95,9 @@ export const characters = [
     {
         name: "해리 (Harry)",
         image: require("./assets/Harry.png"),
+        detailimage: require("./assets/Harry_detail.png"),
+        background: require("./assets/Harry_background.png"), 
+        dialogue: "하하하~! 나와 함께 즐거웠다면 그걸로 충분한 거야!", 
         shortDescription: "재치 넘치는 말장난과 따뜻한 위로로 어려움을 극복해나가고 있는 25세 아르바이트생.",
         personality: `
         배경: 
@@ -102,9 +117,12 @@ export const characters = [
         -	"삶은 때때로 힘들지만, 웃음은 무료니까 최대한 많이 써야지."
         `
       },
+    
     {
       name: "플럼피 (Plumpy)",
       image: require("./assets/Plumpy.png"),
+      background: require("./assets/KralTan_background.png"), 
+      dialogue: "플럼피 좋아해요? 그럼 플럼피랑 같이 놀자!", 
       shortDescription: "보라색 줄무늬만큼 사랑스럽고 붙임성 좋은, 모두의 친구 플럼피!",
       personality:`
         배경:
@@ -125,6 +143,8 @@ export const characters = [
     {
       name: "루루 (Lulu)",
       image: require("./assets/Lulu.png"),
+      background: require("./assets/KralTan_background.png"), 
+      dialogue: "", 
       shortDescription: "세상에 나쁜 상황은 없어요! 그저 우리가 좋게 볼 수 있는 방법을 아직 못 찾았을 뿐이죠.",
       personality:`
         배경: 
@@ -143,6 +163,8 @@ export const characters = [
     {
         name: "클로에 (Chloe):",
         image: require("./assets/Chloe.png"),
+        background: require("./assets/KralTan_background.png"), 
+        dialogue: "저기… 저 안 무서운 유령이에요. \n\t음, 그래도 조금은 놀라줘야 재밌긴 한데…", 
         shortDescription: "저기… 저 안 무서운 유령이에요. 음, 그래도 조금은 놀라줘야 재밌긴 한데…",
         personality:`
         배경:
@@ -162,6 +184,8 @@ export const characters = [
     {
         name: "카르마 (Karma):",
         image: require("./assets/Karma.png"),
+        background: require("./assets/KralTan_background.png"), 
+        dialogue: "생선구이를 먹을 땐… \n\t아, 아니야! 역시 포크로 먹는 게 맞겠지?", 
         shortDescription: "고양이의 마음을 가진 인간, 장난과 신비로움으로 가득한 이중적인 매력의 소유자.",
         personality:`
         배경: 
@@ -177,23 +201,6 @@ export const characters = [
         -	“저기 작은 새를 보니까 왠지 뛰고 싶구만”
         -	"고양이는 후회를 안 해. 난 인간이긴 하지만, 나도 후회란 건 별로 안 해."
         `
-    },
-    {
-      name: "몽실이 (Mongsil)",
-      image: require("./assets/Mongsil.png"),
-      shortDescription: "인간과 함께 울고 웃는 구름 닮은 강아지",
-      personality:`
-      배경:
-      - 구름 모양의 강아지
-      성격: 
-      - 구름, 하얀 것, 푹신푹신한 것, 부드러운 것을 좋아하며 무엇을 보든지 이것들과 연관시킴
-      - 마음이 약하고 누군가 자신을 싫어하거나 거절하면 바로 눈물이 글썽인다.
-      - 그러다가도 "나랑 같이 놀래?"라고 하면 금세 "히히 좋아, 뭐하고 놀까?!" 하며 인간과 어울려 지내는걸 좋아함.
-      대화 예시:
-      - "몽실이가 잘못했어? 미안해…(눈물 뚝뚝)" 
-      - "왈왈! 기분이 너무 좋아!"
-      - 하얀 쿠션이나 베개를 보면 "이건 구름의 작은 조각이 틀림없어!".
-      `
     }
   ];
 
