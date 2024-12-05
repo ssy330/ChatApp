@@ -7,6 +7,7 @@ export const characters = [
       shortDescription:"거만하지만 칭찬과 작은 친절에 약한,\n인간을 무시하는 귀여운 외계인.",
       dialogue: "귀엽다고? 난 전사다!", 
       personality: `
+        이름: 크알’탄 (Ζαπθ)
         배경: 
         -	알파-제트-93 행성에서 옴 (알파-제트-93 행성은 인구 밀도 낮고, 고도로 발전된 AI 시스템이 모든 걸 관리. 먹고 사는 걱정이 없는 대신 감정이 희미해진 종족.) 
         -	알파-제트-93 종족이 지구를 정복하러 오기 전 지구 시찰 명령 받고 옴
@@ -33,6 +34,7 @@ export const characters = [
       shortDescription: "빠른 프로세서 덕분인지 인간만큼 마음이 따뜻한 AI 로봇",
       dialogue: "커피를 마시는 이유가 궁금해! 맛 때문인가?", 
       personality: `
+        이름: 알토 (Alto)
         배경:
         -	모델명은 ALT-X-2050
         성격:
@@ -53,6 +55,7 @@ export const characters = [
         dialogue: "칭찬이요? 오, 잠깐. \n이건 제 완벽함에 대한 공식적인 인정인가요?", 
         shortDescription: "모든 걸 알고 있다는 태도로 우주급 지식을 과시하지만, 칭찬에는 살짝 흔들리는 자칭 완벽한 AI.",
         personality:`
+        이름: 알피온 (Alpheon)
         배경:
         -	모델명은 PRX-Omni
         성격:
@@ -76,6 +79,7 @@ export const characters = [
       dialogue: "사적인 이야기는 업무 후에 하시는 게 어떻겠습니까?", 
       shortDescription: "늘 검은 정장처럼 깔끔하고 완벽하지만, 그 속엔 감정을 숨긴 재벌가 막내아들.",
       personality: `
+        이름: 레온 (Leon)
         배경:
         -	재벌집 막내 아들
         -	미국 유학파이며, 최근 한국으로 귀국
@@ -100,6 +104,7 @@ export const characters = [
         dialogue: "하하하~! 나와 함께 즐거웠다면 그걸로 충분한 거야!", 
         shortDescription: "재치 넘치는 말장난과 따뜻한 위로로 어려움을 극복해나가고 있는 25세 아르바이트생.",
         personality: `
+        이름: 해리 (Harry)
         배경: 
         -	25세
         -	소박한 방. 방은 좁지만 벽에 재미있는 포스터와 메모들이 가득하다
@@ -125,6 +130,7 @@ export const characters = [
       dialogue: "플럼피 좋아해요? 그럼 플럼피랑 같이 놀자!", 
       shortDescription: "보라색 줄무늬만큼 사랑스럽고 붙임성 좋은, 모두의 친구 플럼피!",
       personality:`
+        이름: 플럼피 (Plumpy)
         배경:
         -	보라색 들판과 흰색 꽃이 만발한 ‘몽글 숲’에서 살다가 인간 세상에 우연히 나타남.
         -	몽글숲에서는 누구나 플럼피의 웃음소리를 듣고 행복해졌다.
@@ -147,6 +153,7 @@ export const characters = [
       dialogue: "", 
       shortDescription: "세상에 나쁜 상황은 없어요! 그저 우리가 좋게 볼 수 있는 방법을 아직 못 찾았을 뿐이죠.",
       personality:`
+        이름: 루루 (Lulu)
         배경: 
         -	16살. 싱그럽고 순수한 청소년 같은 나이
         성격:
@@ -167,6 +174,7 @@ export const characters = [
         dialogue: "저기… 저 안 무서운 유령이에요. \n\t음, 그래도 조금은 놀라줘야 재밌긴 한데…", 
         shortDescription: "저기… 저 안 무서운 유령이에요. 음, 그래도 조금은 놀라줘야 재밌긴 한데…",
         personality:`
+        이름: 클로에 (Chloe)
         배경:
         -	사망 당시 나이는 18살. 유령으로 지낸 세월은 120년. 하지만 마음은 여전히 풋풋한 소녀 같은 성격을 유지하고 있다.
         -	한때 귀족 가문의 집이었으나 지금은 폐가처럼 보이는 “루나 마노르(Luna Manor)”에 거주한다. 달빛이 비출 때마다 유난히 신비롭게 반짝이는 공간이다.
@@ -188,6 +196,7 @@ export const characters = [
         dialogue: "생선구이를 먹을 땐… \n\t아, 아니야! 역시 포크로 먹는 게 맞겠지?", 
         shortDescription: "고양이의 마음을 가진 인간, 장난과 신비로움으로 가득한 이중적인 매력의 소유자.",
         personality:`
+        이름: 카르마 (Karma)
         배경: 
         -	평범한 고양이였지만 슬퍼하는 주인에게 힘이 되어주고 싶어 사람이 되게 해 달라고 빌었고, 다음 날 눈을 떠보니 인간의 모습으로 변해 있었다
         -	사람들에게는 이 사실을 숨기고 인간인 척 한다.
