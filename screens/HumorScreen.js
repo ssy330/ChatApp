@@ -25,7 +25,7 @@ export default function HumorScreen({ navigation }) {
         {/* 하단 고정 카테고리 버튼 */}
         <View style={styles.footer}>
             <TouchableOpacity onPress={() => navigation.navigate('HumorScreen')} style={[styles.footerButton, styles.footerButtonWithBorder]}>
-            <Text style={styles.footerButtonText}>병맛</Text>
+            <Text style={styles.footerClickedButtonText}>병맛</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate('OldScreen')} style={[styles.footerButton, styles.footerButtonWithBorder]}>
             <Text style={styles.footerButtonText}>유명인</Text>
@@ -90,4 +90,9 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     },
+    footerClickedButtonText: {
+        color: "#00FFFF",
+        fontSize: 16,
+        fontWeight: 'bold',
+        },
 });

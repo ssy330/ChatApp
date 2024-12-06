@@ -6,7 +6,7 @@ export default function MainScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <FlatList
-        contentContainerStyle={styles.listContent} // 리스트에만 패딩 적용
+        contentContainerStyle={[styles.listContent, { paddingBottom: 60 }]} // 리스트에만 패딩 적용
         data={characters} // 캐릭터 데이터
         keyExtractor={(item, index) => index.toString()} // 각 항목의 고유 키
         renderItem={({ item }) => (
@@ -37,7 +37,7 @@ export default function MainScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#380B61",//'#0B0B3B', // 배경색 설정
+    backgroundColor: "#380B61"//"#380B61",//'#0B0B3B', // 배경색 설정
   },
   listContent: {
     padding: 10, // FlatList에만 패딩 적용

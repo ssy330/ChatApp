@@ -31,7 +31,7 @@ export default function NewScreen({ navigation }) {
             <Text style={styles.footerButtonText}>유명인</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate('NewScreen')} style={[styles.footerButton, styles.footerButtonWithBorder]}>
-            <Text style={styles.footerButtonText}>창작 캐릭터</Text>
+            <Text style={styles.footerClickedButtonText}>창작 캐릭터</Text>
             </TouchableOpacity>
         </View>
     </View>
@@ -90,4 +90,9 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     },
+    footerClickedButtonText: {
+        color: "#00FFFF",
+        fontSize: 16,
+        fontWeight: 'bold',
+        },
 });
