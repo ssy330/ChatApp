@@ -5,6 +5,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/HomeScreen';
 import MainScreen from './screens/MainScreen';
 import CharacterDetailScreen from './screens/CharacterDetailScreen';
+import OldScreen from './screens/OldScreen';
+import NewScreen from './screens/NewScreen';
+import HumorScreen from './screens/HumorScreen';
 import ChatApp from './screens/ChatApp';
 
 
@@ -31,6 +34,27 @@ export default function App() {
           headerTintColor: styles.headerTintColor, // 화살표 및 텍스트 색상 참조
           headerTitleStyle: styles.headerTitleStyle, // 제목 텍스트 스타일 참조
         }} />
+        <Stack.Screen name="OldScreen" component={OldScreen} 
+          options={{ 
+            title: '기존 캐릭터',
+            headerStyle: styles.headerStyle, // 헤더 스타일 참조
+            headerTintColor: styles.headerTintColor, // 화살표 및 텍스트 색상 참조
+            headerTitleStyle: styles.headerTitleStyle, // 제목 텍스트 스타일 참조
+          }} />
+        <Stack.Screen name="NewScreen" component={NewScreen} 
+          options={{ 
+            title: '창작 캐릭터',
+            headerStyle: styles.headerStyle, // 헤더 스타일 참조
+            headerTintColor: styles.headerTintColor, // 화살표 및 텍스트 색상 참조
+            headerTitleStyle: styles.headerTitleStyle, // 제목 텍스트 스타일 참조
+          }} />
+          <Stack.Screen name="HumorScreen" component={HumorScreen} 
+          options={{ 
+            title: '병맛 캐릭터',
+            headerStyle: styles.headerStyle, // 헤더 스타일 참조
+            headerTintColor: styles.headerTintColor, // 화살표 및 텍스트 색상 참조
+            headerTitleStyle: styles.headerTitleStyle, // 제목 텍스트 스타일 참조
+          }} />
         <Stack.Screen name="Chat" component={ChatApp} 
           options={{ 
             title: '채팅',
