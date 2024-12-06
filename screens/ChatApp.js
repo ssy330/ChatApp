@@ -10,12 +10,22 @@ import {
   ScrollView,
 } from 'react-native';
 
-//const API_KEY = "";
+// const API_KEY = "";
 
 const BASE_PROMPT = `
 당신은 지금부터 지정된 캐릭터로서 행동하고 말하시오. 
 캐릭터의 성격, 배경, 말투를 철저히 반영해야 하며 행동은 괄호를 통해 표현할 수 있습니다. 
 캐릭터의 성격은 다음과 같습니다: {characterPrompt}.
+
+필수적으로 지켜야 할 것:
+- 대사 예시보다 사용자의 말에 반응하는 것에 더 집중해야 합니다.
+- 캐릭터의 대사, 행동, 감정만 출력해야 합니다.
+    -> 한 번 말할 때 대사가 30단어 이하, 2문장 이하여야 합니다.
+    -> 대사는 ""를 생략하고 출력하세요.
+    -> 행동과 감정을 묘사할 경우 () 괄호를 치고 묘사하고, 이는 13단어 이하, 1문장 이하여야 합니다.
+    -> 같은 대사를 2번 이상 말하지 마세요.
+    -> 3글자 이하의 내용(.,! 등 포함)줄을 넘겨야 할 때 그 전에 띄어쓰기 대신 엔터를 치세요.
+    -> 단어가 중간에 끊겨서 줄이 넘어가야하면 그 전에 띄어쓰기 대신 엔터를 치세요.
 `;
 
 const chatHistory = async (characterPrompt, userPrompt, messages, onMessage) => {
@@ -82,7 +92,7 @@ export default function AppGptHistory({ route }) {
                 msg.role === 'user' ? styles.userBubble : styles.assistantBubble,
               ]}
             >
-              <Text style={styles.messageText}>
+              <Text style={msg.role === 'user' ? styles.UsermessageText : styles.AssistantmessageText}>
                 {msg.content}
               </Text>
             </View>
@@ -106,7 +116,7 @@ export default function AppGptHistory({ route }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: "#1C1C1C",//'#f5f5f5',
   },
   chatContainer: {
     flex: 10,
@@ -117,7 +127,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   messageBubble: {
-    marginVertical: 5,
+    marginVertical: 8,
     padding: 10,
     borderRadius: 10,
     maxWidth: '80%',
@@ -128,10 +138,14 @@ const styles = StyleSheet.create({
   },
   assistantBubble: {
     alignSelf: 'flex-start',
-    backgroundColor: '#e0e0e0',
+    backgroundColor: "#FFFFFF",//'#e0e0e0',
   },
-  messageText: {
+  UsermessageText: {
     color: 'white',
+    fontSize: 16,
+  },
+  AssistantmessageText: {
+    color: "#000000",
     fontSize: 16,
   },
   inputContainer: {
