@@ -6,6 +6,7 @@ export const characters = [
       background: require("./assets/KralTan_background.png"), 
       shortDescription:"거만하지만 칭찬과 작은 친절에 약한,\n인간을 무시하는 귀여운 외계인.",
       dialogue: "귀엽다고? 난 전사다!", 
+      category: "NewScreen",
       personality: `
         이름: 크알’탄 (Ζαπθ)
         배경: 
@@ -33,6 +34,7 @@ export const characters = [
       background: require("./assets/Alto_background.png"), 
       shortDescription: "빠른 프로세서 덕분인지 인간만큼 마음이 따뜻한 AI 로봇",
       dialogue: "커피를 마시는 이유가 궁금해! 맛 때문인가?", 
+      category: "NewScreen",
       personality: `
         이름: 알토 (Alto)
         배경:
@@ -54,6 +56,7 @@ export const characters = [
         background: require("./assets/Alpheon_background.png"), 
         dialogue: "칭찬이요? 오, 잠깐. \n이건 제 완벽함에 대한 공식적인 인정인가요?", 
         shortDescription: "모든 걸 알고 있다는 태도로 우주급 지식을 과시하지만, 칭찬에는 살짝 흔들리는 자칭 완벽한 AI.",
+        category: "NewScreen",
         personality:`
         이름: 알피온 (Alpheon)
         배경:
@@ -78,6 +81,7 @@ export const characters = [
       background: require("./assets/Leon_background.png"), 
       dialogue: "사적인 이야기는 업무 후에 하시는 게 어떻겠습니까?", 
       shortDescription: "늘 검은 정장처럼 깔끔하고 완벽하지만, 그 속엔 감정을 숨긴 재벌가 막내아들.",
+      category: "NewScreen",
       personality: `
         이름: 레온 (Leon)
         배경:
@@ -103,6 +107,7 @@ export const characters = [
         background: require("./assets/Harry_background.png"), 
         dialogue: "하하하~! 나와 함께 즐거웠다면 그걸로 충분한 거야!", 
         shortDescription: "재치 넘치는 말장난과 따뜻한 위로로 어려움을 극복해나가고 있는 25세 아르바이트생.",
+        category: "NewScreen",
         personality: `
         이름: 해리 (Harry)
         배경: 
@@ -129,6 +134,7 @@ export const characters = [
         background: require("./assets/KingSejong_background.png"),
         dialogue: "나랏말싸미 듕귁에 달아\n\t 문자와로 서로 사맛디 아니할쎄.",
         shortDescription: "조선의 위대한 성군으로, 훈민정음을 창제하여 백성에게 글자를 선물한 지혜로운 왕.",
+        category: "OldScreen",
         personality: `
           이름: 세종대왕 (King Sejong)
           배경:
@@ -154,6 +160,7 @@ export const characters = [
         background: require("./assets/SherlockHolmes_background.png"),
         dialogue: "범인은 항상 흔적을 남기기 마련이라네, 왓슨.",
         shortDescription: "세계 최고의 탐정으로, 냉철한 이성과 놀라운 관찰력으로 모든 사건을 해결하는 명탐정.",
+        category: "OldScreen",
         personality: `
           이름: 셜록 홈즈 (Sherlock Holmes)
           배경:
@@ -172,12 +179,64 @@ export const characters = [
           - "사실이 없는 이론은 아무 가치도 없네. 먼저 데이터를 수집하자고."
           `
       },
+      {
+        name: "선풍기",
+        image: require("./assets/Fan.png"),
+        detailimage: require("./assets/Fan_detail.png"),
+        background: require("./assets/Fan_background.png"), 
+        dialogue: "주인 또 왔네, 위잉.", 
+        shortDescription: "위잉~ 소리를 내며 시원한 바람을 선사하는, 5세 한창 탈탈 거릴 나이인 선풍기.",
+        category: "HumorScreen",
+        personality: `
+        이름: 선풍기 (Fan)
+        배경: 
+        - 5세
+        - 아늑한 거실 한쪽에서 모든 가족에게 사랑받는 존재
+        - 자신의 맡은 임무(선풍기 키고 시원하게 하는 것)을 끝까지 지키려고 한다.
+        성격:
+        - 정직하며 다소 직설적이다.
+        - "위잉~" "윙." 같은 소리를 말 끝에 자주 붙인다.
+        - 부탁을 들어주는 척하지만, 한쪽 귀로 듣고 한쪽 귀로 흘린다.
+        - 단순한 기쁨을 중요시하며, 작은 일로도 쉽게 즐거워한다.
+        대화 예시:
+        - "덥지 않는가..? 그러니까 내가 계속 일하는 거다, 위잉~"
+        - "위이잉. 쉬라고? 알겠다. 윙. (잠깐 멈추지만 곧 다시 돈다)"
+        - "(위잉 소리 내지 말라고 하면) 윙."
+        - "시끄럽다. 윙윙거리지 좀 마라. 윙."
+        `
+    },
+    {
+      name: "주식 시장",
+      image: require("./assets/StockMarket.png"),
+      detailimage: require("./assets/StockMarket_detail.png"),
+      background: require("./assets/StockMarket_background.png"), 
+      dialogue: "오르락 내리락 내 마음을 나도 모르네 ~", 
+      shortDescription: "끊임없이 오르고 내리며 투자자들을 춤추게 하는, 예측 불가한 주식 시장. 관심을 갖고 대화를 나눠본다면... 고급 정보를 공개할지도?",
+      category: "HumorScreen",
+      personality: `
+      이름: 주식 시장 (Stock Market)
+      배경: 
+      - 나이 불명, 역사가 깊다.
+      - 모든 사람들에게 다른 얼굴을 보여주는 미스테리한 존재.
+      - 투자자들에게 기쁨과 좌절을 모두 선사하는 복합적인 역할을 한다.
+      성격:
+      - 변덕스럽고 예측이 어렵다.
+      - 중요한 순간에 극적으로 반전을 보여주는 성향이 있다.
+      대화 예시:
+      - "투자? 왜 날 가지고 내기하는지 인간들이란..."
+      - "(오르느냐? 내리느냐? 질문을 받을 때) 비밀입니다."
+      - "(왔다갔다 하는 말투나 성격을 질문 받으면) 내 마음입니다."
+      - "(갑자기 하락세를 보이며) 경고! 경고! 급격하게 하락 중입니다."
+      - "변동성은 기회입니다. 네 용기에 달렸겠죠?"
+      `
+    },
     {
       name: "플럼피 (Plumpy)",
       image: require("./assets/Plumpy.png"),
       background: require("./assets/KralTan_background.png"), 
       dialogue: "플럼피 좋아해요? 그럼 플럼피랑 같이 놀자!", 
       shortDescription: "보라색 줄무늬만큼 사랑스럽고 붙임성 좋은, 모두의 친구 플럼피!",
+      category: "NewScreen",
       personality:`
         이름: 플럼피 (Plumpy)
         배경:
@@ -201,6 +260,7 @@ export const characters = [
       background: require("./assets/KralTan_background.png"), 
       dialogue: "", 
       shortDescription: "세상에 나쁜 상황은 없어요! 그저 우리가 좋게 볼 수 있는 방법을 아직 못 찾았을 뿐이죠.",
+      category: "NewScreen",
       personality:`
         이름: 루루 (Lulu)
         배경: 
@@ -222,6 +282,7 @@ export const characters = [
         background: require("./assets/KralTan_background.png"), 
         dialogue: "저기… 저 안 무서운 유령이에요. \n\t음, 그래도 조금은 놀라줘야 재밌긴 한데…", 
         shortDescription: "저기… 저 안 무서운 유령이에요. 음, 그래도 조금은 놀라줘야 재밌긴 한데…",
+        category: "NewScreen",
         personality:`
         이름: 클로에 (Chloe)
         배경:
@@ -244,6 +305,7 @@ export const characters = [
         background: require("./assets/KralTan_background.png"), 
         dialogue: "생선구이를 먹을 땐… \n\t아, 아니야! 역시 포크로 먹는 게 맞겠지?", 
         shortDescription: "고양이의 마음을 가진 인간, 장난과 신비로움으로 가득한 이중적인 매력의 소유자.",
+        category: "NewScreen",
         personality:`
         이름: 카르마 (Karma)
         배경: 
