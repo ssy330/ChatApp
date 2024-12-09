@@ -41,7 +41,7 @@ export default function App({ navigation }) {
             headerTintColor: styles.headerTintColor, // 화살표 및 텍스트 색상 참조
             headerTitleStyle: styles.headerTitleStyle, // 제목 텍스트 스타일 참조
             headerLeft: () => (
-              <TouchableOpacity onPress={() => navigation.navigate('MainScreen')}>
+              <TouchableOpacity onPress={()  => navigation.goBack()}>
                 <Text style={{ color: styles.headerTintColor, fontWeight: 'bold', fontSize: 22, marginLeft: 21 }}>←</Text>
               </TouchableOpacity>
             ),
@@ -99,7 +99,7 @@ export default function App({ navigation }) {
           headerTintColor: styles.headerTintColor, // 화살표 및 텍스트 색상 참조
           headerTitleStyle: styles.headerTitleStyle, // 제목 텍스트 스타일 참조
           headerLeft: () => (
-            <TouchableOpacity onPress={() => navigation.navigate('MainScreen')}>
+            <TouchableOpacity onPress={()  => navigation.goBack()}>
               <Text style={{ color: styles.headerTintColor, fontWeight: 'bold', fontSize: 22, marginLeft: 21 }}>←</Text>
             </TouchableOpacity>
           ),
