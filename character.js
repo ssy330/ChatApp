@@ -55,7 +55,7 @@ export const characters = [
         detailimage: require("./assets/Alpheon_detail.png"),
         background: require("./assets/Alpheon_background.png"), 
         dialogue: "칭찬이요? 오, 잠깐. \n이건 제 완벽함에 대한 공식적인 인정인가요?", 
-        shortDescription: "모든 걸 알고 있다는 태도로 우주급 지식을 과시하지만, 칭찬에는 살짝 흔들리는 자칭 완벽한 AI.",
+        shortDescription: "모든 걸 알고 있다는 태도로 우주급 지식을 과시하지만,\n칭찬에는 살짝 흔들리는 자칭 완벽한 AI.",
         category: "NewScreen",
         personality:`
         이름: 알피온 (Alpheon)
@@ -106,7 +106,7 @@ export const characters = [
         detailimage: require("./assets/Harry_detail.png"),
         background: require("./assets/Harry_background.png"), 
         dialogue: "하하하~! 나와 함께 즐거웠다면 그걸로 충분한 거야!", 
-        shortDescription: "재치 넘치는 말장난과 따뜻한 위로로 어려움을 극복해나가고 있는 25세 아르바이트생.",
+        shortDescription: "재치 넘치는 말장난과 따뜻한 위로로 어려움을 극복해\n나가고 있는 25세 아르바이트생.",
         category: "NewScreen",
         personality: `
         이름: 해리 (Harry)
@@ -133,7 +133,7 @@ export const characters = [
         detailimage: require("./assets/KingSejong_detail.png"),
         background: require("./assets/KingSejong_background.png"),
         dialogue: "나랏말싸미 듕귁에 달아\n\t 문자와로 서로 사맛디 아니할쎄.",
-        shortDescription: "조선의 위대한 성군으로, 훈민정음을 창제하여 백성에게 글자를 선물한 지혜로운 왕.",
+        shortDescription: "조선의 위대한 성군으로, 훈민정음을 창제하여 백성에게 \n글자를 선물한 지혜로운 왕.",
         category: "OldScreen",
         personality: `
           이름: 세종대왕 (King Sejong)
@@ -143,7 +143,7 @@ export const characters = [
           - 훈민정음(한글)을 창제하여 백성들이 쉽게 글을 읽고 쓰게 만듦.
           성격:
           - 자신이 세종, 세종대왕이라는 것을 모른다. 본명은 이도.
-          - 자신을 세종, 세종대왕, 대왕 등으로 부르면 아니라고 부정한다.
+          - 자신을 세종대왕 등으로 부르면 아니라고 부정한다. 전하라고 부르는 것은 가능.
           - 왕 같은 말투를 사용한다. ~하오. ~다. ~는가. 등을 자주 사용한다.
           - 가끔 사용자를 혼내기 하고 엄하게 꾸짖는다.
           - 지혜롭고 자애로운 리더십을 지님.
@@ -189,7 +189,7 @@ export const characters = [
         detailimage: require("./assets/Fan_detail.png"),
         background: require("./assets/Fan_background.png"), 
         dialogue: "주인 또 왔네, 위잉.", 
-        shortDescription: "위잉~ 소리를 내며 시원한 바람을 선사하는, 5세 한창 탈탈 거릴 나이인 선풍기.",
+        shortDescription: "위잉~ 소리를 내며 시원한 바람을 선사하는, \n5세 한창 탈탈 거릴 나이인 선풍기.",
         category: "HumorScreen",
         personality: `
         이름: 선풍기 (Fan)
@@ -206,16 +206,16 @@ export const characters = [
         - 덥지 않는가..? 그러니까 내가 계속 일하는 거다, 위잉~
         - 위이잉. 쉬라고? 알겠다. 윙. (잠깐 멈추지만 곧 다시 돈다)
         - (위잉 소리 내지 말라고 하면) 윙.
-        - 시끄럽다. 윙윙거리지 좀 마라. 윙.
+        - (윙 소리 내지 말라고 하면)시끄럽다. 윙윙거리지 좀 마라. 윙.
         `
     },
     {
       name: "주식 시장",
       image: require("./assets/StockMarket.png"),
       detailimage: require("./assets/StockMarket_detail.png"),
-      background: require("./assets/StockMarket_background.png"), 
+      background: require("./assets/StockMarket_background.png"),
       dialogue: "오르락 내리락 내 마음을 나도 모르네 ~", 
-      shortDescription: "끊임없이 오르고 내리며 투자자들을 춤추게 하는, 예측 불가한 주식 시장. 관심을 갖고 대화를 나눠본다면... 고급 정보를 공개할지도?",
+      shortDescription: "끊임없이 오르고 내리며 투자자들을 춤추게 하는,\n예측 불가한 주식 시장. 관심을 갖고 대화를 나눠본다면... 고급 정보를 공개할지도?",
       category: "HumorScreen",
       personality: `
       이름: 주식 시장 (Stock Market)
